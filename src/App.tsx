@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { helloWorld } from '@sebride4988/function-utils';
+import functions from '@sebride4988/function-utils';
 import './App.css';
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-          {helloWorld()}
+          <br />
+          {functions.mapper.toLength(functions.helloWorld())}
         </a>
       </header>
     </div>
